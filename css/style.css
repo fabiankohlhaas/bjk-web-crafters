@@ -1,36 +1,36 @@
 .hero {
-    position: relative;
-    height: 80vh;
-    max-height: 40rem;
-    overflow: hidden;
-  }
-  
-  .hero-image {
-    animation: zoom 10s infinite;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .hero-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2em;
-  }
-  
-  @keyframes zoom {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
+  position: relative;
+  height: 80vh;
+  max-height: 40rem;
+  overflow: hidden;
+}
+
+.hero-image {
+  animation: zoom 10s infinite;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
   }
 
-  
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
