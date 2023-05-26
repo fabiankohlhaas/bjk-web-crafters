@@ -1,36 +1,83 @@
 .hero {
-    position: relative;
-    height: 80vh;
-    max-height: 40rem;
-    overflow: hidden;
-  }
-  
-  .hero-image {
-    animation: zoom 10s infinite;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .hero-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2em;
-  }
-  
-  @keyframes zoom {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+  position: relative;
+  height: 80vh;
+  max-height: 40rem;
+  overflow: hidden;
+}
 
-  
+.hero-image {
+  animation: zoom 60s infinite;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.hero-title {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-20%, -20%);
+  color: white;
+  font-size: 2em;
+}
+
+.hero-link {
+  position: absolute;
+  top: 30%; /* Ändern Sie diesen Wert entsprechend */
+  left: 25%; /* Ändern Sie diesen Wert entsprechend */
+  transform: translate(-20%, -25%); /* Ändern Sie diese Werte entsprechend */
+  color: whitesmoke;
+  font-size: 1.5em;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.hero-button {
+  background-color: whitesmoke  ; /* Ändern Sie diese Farbe entsprechend Ihren Wünschen */
+  color: black; /* Ändern Sie diese Farbe entsprechend Ihren Wünschen */
+  position: absolute;
+  top: 30%; /* Ändern Sie diesen Wert entsprechend */
+  left: 20%; /* Ändern Sie diesen Wert entsprechend */
+  transform: translate(-30%, -25%); /* Ändern Sie diese Werte entsprechend */
+}
+
+.hero-button:hover {
+  background-color: lightslategray; /* Ändern Sie diese Farbe entsprechend Ihren Wünschen */
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+footer {
+  margin-top: auto;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.img-fluid {
+  max-width: 60%;
+}
